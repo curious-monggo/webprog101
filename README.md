@@ -41,3 +41,9 @@ How to setup phpMyAdmin
 3. Type http://localhost/phpmyadmin/ in admin(or just click on the url)
 
 4. Watch youtube for tutorials.
+
+
+
+Learn how to make a simple login system(Dito binase ung backend)
+https://www.youtube.com/watch?v=xb8aad4MRx8
+(1 hour yan)
