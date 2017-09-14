@@ -58,6 +58,37 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+
+
+      .demo-card-wide.mdl-card {
+        width: 900px;
+        margin-bottom: 30px;
+      }
+      .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 176px;
+        background-color: grey;
+      }
+      .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+      }
+
+      .demo-card-square.mdl-card {
+        width:260px;
+        height: 320px;
+
+       
+      }
+      .demo-card-square > .mdl-card__title {
+        color: #fff;
+        background:
+          url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+      }
+      .mdl-data-table.mdl-js-data-table.mdl-data-table--selectable.mdl-shadow--2dp{
+          width: 100%;
+      } 
+
+
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -66,16 +97,18 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Name &amp; Title</h3>
+          <h3>Whaat? &amp; An online forum for SHS</h3>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">Features</a>
-          <a href="#features" class="mdl-layout__tab">Details</a>
-          <a href="#features" class="mdl-layout__tab">Technology</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
+          <a href="#home" class="mdl-layout__tab is-active">Forum</a>
+          <a href="#randompage" class="mdl-layout__tab">Random page</a>
+          <a href="#randompage2" class="mdl-layout__tab">Random page 2</a>
+          <a href="#html" class="mdl-layout__tab">HTML</a>
+          <a href="#css" class="mdl-layout__tab">CSS</a>
+          <a href="#java" class="mdl-layout__tab">JAVA</a>
+          <a href="#sql" class="mdl-layout__tab">SQL</a>
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">add</i>
             <span class="visuallyhidden">Add</span>
@@ -83,14 +116,14 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
+        <div class="mdl-layout__tab-panel is-active" id="home">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
               <i class="material-icons">play_circle_filled</i>
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
+                <h4>Quick how-to</h4>
                 Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
               </div>
               <div class="mdl-card__actions">
@@ -109,31 +142,45 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+                <h4 class="mdl-cell mdl-cell--12-col">Forum(category)</h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
                 </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div> 
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>                              
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <a href="#" class="mdl-button">See all of the questions</a>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
@@ -148,7 +195,7 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
+                <h4>Random article of the day</h4>
                 Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
               </div>
               <div class="mdl-card__actions">
@@ -181,10 +228,16 @@
             </div>
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="features">
+
+
+
+
+
+
+        <div class="mdl-layout__tab-panel" id="randompage">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
+              <h4>Random page(Use this for articles or things needing detailed explanation</h4>
               Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
               <ul class="toc">
                 <h4>Contents</h4>
@@ -235,6 +288,779 @@
               </p>
             </div>
           </section>
+        </div>
+
+
+       <div class="mdl-layout__tab-panel" id="html">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--8-col">
+                  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">Intro page here</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">HTML Topic #1</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+               
+                 <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">HTML Topic #2</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>     
+                
+                 <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">HTML Topic #3</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div> 
+                                             
+              </div>
+
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--1-col">
+                    <!-- Raised button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised">
+                      Button
+                    </button>
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>                
+                   <div class="mdl-cell mdl-cell--1-col">                 
+                    <!-- Raised button with ripple -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                      Button
+                  </button>
+                  </div>
+                  <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+                     <!-- Raised disabled button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+                      Button
+                    </button>      
+                  </div> 
+                </div> 
+
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <thead>
+                          <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Material</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                            <td>50</td>
+                            <td>$1.25</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                            <td>10</td>
+                            <td>$2.35</td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                    </div>
+                  </div>
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Dummy text</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/mini2.png" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+
+
+
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+
+
+        </div>
+
+       <div class="mdl-layout__tab-panel" id="randompage2">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+                 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Dummy text</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/mini2.png" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+
+
+
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+          </section>
+        </div>
+
+       <div class="mdl-layout__tab-panel" id="css">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--8-col">
+                  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">CSS Intro page here</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">CSS Topic #1</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+               
+                 <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">CSS Topic #2</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>     
+                
+                 <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">CSS Topic #3</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div> 
+                                             
+              </div>
+
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--1-col">
+                    <!-- Raised button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised">
+                      Button
+                    </button>
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>                
+                   <div class="mdl-cell mdl-cell--1-col">                 
+                    <!-- Raised button with ripple -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                      Button
+                  </button>
+                  </div>
+                  <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+                     <!-- Raised disabled button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+                      Button
+                    </button>      
+                  </div> 
+                </div> 
+
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <thead>
+                          <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Material</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                            <td>50</td>
+                            <td>$1.25</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                            <td>10</td>
+                            <td>$2.35</td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                    </div>
+                  </div>
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Dummy text</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/mini2.png" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+
+
+
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+        </div>
+
+
+
+       <div class="mdl-layout__tab-panel" id="java">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--8-col">
+                  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">Java Intro page here</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Java Topic #1</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+               
+                 <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Java Topic #2</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>     
+                
+                 <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Java Topic #3</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div> 
+                                             
+              </div>
+
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--1-col">
+                    <!-- Raised button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised">
+                      Button
+                    </button>
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>                
+                   <div class="mdl-cell mdl-cell--1-col">                 
+                    <!-- Raised button with ripple -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                      Button
+                  </button>
+                  </div>
+                  <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+                     <!-- Raised disabled button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+                      Button
+                    </button>      
+                  </div> 
+                </div> 
+
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <thead>
+                          <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Material</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                            <td>50</td>
+                            <td>$1.25</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                            <td>10</td>
+                            <td>$2.35</td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                    </div>
+                  </div>
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Dummy text</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/mini2.png" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+
+
+
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+
+
+
+       <div class="mdl-layout__tab-panel" id="sql">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--8-col">
+                  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">SQL Intro page here</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">SQL Topic #1</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+               
+                 <div class="mdl-cell mdl-cell--4-col">
+                  
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">SQL Topic #2</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div>     
+                
+                 <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">SQL Topic #3</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        See More...
+                      </a>
+                    </div>
+                  </div>
+                </div> 
+                                             
+              </div>
+
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--1-col">
+                    <!-- Raised button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised">
+                      Button
+                    </button>
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>                
+                   <div class="mdl-cell mdl-cell--1-col">                 
+                    <!-- Raised button with ripple -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                      Button
+                  </button>
+                  </div>
+                  <div class="mdl-cell mdl-cell--1-col">
+     
+                  </div>
+                    <div class="mdl-cell mdl-cell--1-col">
+                     <!-- Raised disabled button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+                      Button
+                    </button>      
+                  </div> 
+                </div> 
+
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <thead>
+                          <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Material</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                            <td>50</td>
+                            <td>$1.25</td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                            <td>10</td>
+                            <td>$2.35</td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                    </div>
+                  </div>
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Dummy text</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/mini2.png" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+
+
+
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+
+
+        </div>
+
         </div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
