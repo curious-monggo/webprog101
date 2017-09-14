@@ -2,11 +2,11 @@
 STI BSIT students project for WEBPROG. Online Platforms for WHAT?
 
 
-Yung files dyan ay template pa lang. Mamaya ko pa maa-upload yung system.
+Yung system files ay yung (loginsystem na folder)
 
 
 
-What to do?
+# What to do?
 
 1. Download the project(ung green na may description na clone or download)
 
