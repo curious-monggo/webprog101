@@ -20,7 +20,7 @@ Yung system files ay yung (loginsystem na folder)
 
 6. Style the templates(customize colors)
 
-7. upload the files after editing on github.com
+7. upload the files after editing on https://github.com
 
 
 
