@@ -121,11 +121,35 @@
       #arrows{
         font-size: 70px;
         float: left;
+
       }
       #bookmark{
          font-size: 25px;
         float: right;
       }
+      #tags{
+          padding:0px;
+          margin-top:-30px;
+       /* vertical-align: top;*/
+      }
+     /* #comment{
+          padding:0px;
+          margin-top:-23px;
+
+        vertical-align: top;
+      }*/
+      .addcomment{
+        color: grey;
+        text-decoration: none;      
+      }
+      a:hover{
+        color: #ff4081;
+        text-decoration: none;      
+      }  
+      .name{
+         text-decoration: none;         
+      }
+
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -164,17 +188,18 @@
                 
 
                 <div class="mdl-grid">
-  
-                  <div class="mdl-cell mdl-cell--12-col"><i class="material-icons" id="bookmark">bookmark_border</i>
+                  
+                  <div class="mdl-cell mdl-cell--11-col"><i class="material-icons" id="bookmark">bookmark_border</i>
                     <h4>Quuestion(title)</h4>
 
  <hr>  
                      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" id="arrows-wrapper">
-                  <i class="material-icons" id="arrows">arrow_drop_up</i><br>
-                  <i class="material-icons" id="arrows">arrow_drop_down</i>
+                     <div class="mdl-cell mdl-cell--1-col">                  <i class="material-icons" id="arrows">arrow_drop_up</i><br>
+                  <i class="material-icons" id="arrows">arrow_drop_down</i></div>
+
                   
                      </div>
-      
+
                 (question content)Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. 
                 <div id="scroll">
                   <pre>
@@ -345,10 +370,10 @@ public class GenericList{
                   </pre>
 
                   </div>
-                  <div class="mdl-grid">
+                  <div class="mdl-grid" id="tags">
                     <div class="mdl-cell mdl-cell--2-col"></div>
 
-                    <div class="mdl-cell mdl-cell--10-col">
+                    <div class="mdl-cell mdl-cell--10-col" >
                                           
                       <button type="button" class="mdl-chip">
                           <span class="mdl-chip__text">Java</span>
@@ -372,29 +397,37 @@ public class GenericList{
 
 
 
-                  <br/>
+                  
 
                   <hr>
                   <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col">2</div>
+                    <div class="mdl-cell mdl-cell--2-col"></div>
 
-                    <div class="mdl-cell mdl-cell--10-col">
-                      <div class="comment">                 
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a>- Justine Mojal</a>  <p class="datetimestamp">an hour ago</p></p>
+                    <div class="mdl-cell mdl-cell--10-col" id="comment">
+                                  
+                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">an hour ago</p></p>
                       <hr>
-                     </div>
+                     
           
                     </div>
-                  </div>
-                  <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col">2</div>
+                  
+                  
+                    <div class="mdl-cell mdl-cell--2-col"></div>
 
-                    <div class="mdl-cell mdl-cell--10-col">
+                    <div class="mdl-cell mdl-cell--10-col" id="comment">
                                           
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a>- Justine Mojal</a>  <p class="datetimestamp">33 mins ago</p></p>
+                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">33 mins ago</p></p>
                      <hr>
           
                     </div>
+                    <div class="mdl-cell mdl-cell--2-col"></div>
+
+                    <div class="mdl-cell mdl-cell--10-col" id="comment">
+                                          
+                      <a href="" class="addcomment">Add a comment</a>
+          
+                    </div>
+                    
                   </div>
                           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                             <div class="mdl-card mdl-cell mdl-cell--12-col">
