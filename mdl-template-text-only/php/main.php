@@ -1,175 +1,3 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
-    <link rel="stylesheet" href="styles.css">
-
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <style>
-      #view-source {
-        position: fixed;
-        display: block;
-        right: 0;
-        bottom: 0;
-        margin-right: 40px;
-        margin-bottom: 40px;
-        z-index: 900;
-      }
-
-
-      .demo-card-wide.mdl-card {
-        width: 900px;
-        margin-bottom: 30px;
-      }
-      .demo-card-wide > .mdl-card__title {
-        color: #fff;
-        height: 176px;
-        background-color: grey;
-      }
-      .demo-card-wide > .mdl-card__menu {
-        color: #fff;
-      }
-
-      .demo-card-square.mdl-card {
-        width:260px;
-        height: 320px;
-
-       
-      }
-      .demo-card-square > .mdl-card__title {
-        color: #fff;
-        background:
-          url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
-      }
-      .mdl-data-table.mdl-js-data-table.mdl-data-table--selectable.mdl-shadow--2dp{
-          width: 100%;
-      } 
-      .demo-list-icon {
-        width: 300px;
-      }
-
-
-           pre{
-        white-space:pre-wrap;
-      }
-      #scroll {
-        
-      width:auto;
-      height:300px;
-      margin:30px auto;
-      background: lightgrey;
-      border:2=2px solid #000;
-      overflow-x:scroll;
-      overflow-y:scroll;
-     /* white-space:nowrap;*/
-      color:black;
-      white-space:pre-wrap;
-      }
-      #scroll img {
-      margin:20px 10px 0 10px;
-      }
-      .datetimestamp{
-        color: grey;
-      }
-      
-      #arrows{
-        font-size: 70px;
-        float: left;
-        margin-left:-50px;
-      }
-      #bookmark{
-         font-size: 25px;
-        float: right;
-      }
-      #tags{
-          padding:0px;
-          margin-top:-30px;
-       /* vertical-align: top;*/
-      }
-     /* #comment{
-          padding:0px;
-          margin-top:-23px;
-
-        vertical-align: top;
-      }*/
-      .addcomment{
-        color: grey;
-        text-decoration: none;      
-      }
-      a:hover{
-        color: #ff4081;
-        text-decoration: none;      
-      }  
-      .name{
-         text-decoration: none;         
-      }
-      #card-detail{
-        margin-left:0 ;
-        margin-right:0 ;       
-      }
-      #comment-box{
-        background-color: lightgrey;
-        white-space:pre-wrap;
-
-      }
-      .like-counter{
-        font-size: 25px;
-        float: left;
-        margin-top: 40px;
-        margin-left:-50px;  
-
-      }
-
-    </style>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
@@ -195,418 +23,100 @@
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="home">
-
-
-<br/>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" >
-            <div class="mdl-card mdl-cell mdl-cell--12-col" id="card-detail">          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                
-
-                <div class="mdl-grid">
-                  
-                  <div class="mdl-cell mdl-cell--11-col"><i class="material-icons" id="bookmark">bookmark_border</i>
-                    <h4>Quuestion(title)</h4>
-
- <hr>  
-                     <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" id="arrows-wrapper">
-                     <div class="mdl-cell mdl-cell--1-col">                  
-                     <i class="material-icons" id="arrows">arrow_drop_up</i><br>
-                     <p class="like-counter">80</p><br>
-                     <i class="material-icons" id="arrows">arrow_drop_down</i>
-
-                     </div>
-
-                  
-                     </div>
-
-                (question content)Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. 
-                <div id="scroll">
-                  <pre>
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.city {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    max-width: 300px;
-    height: 300px;
-    border: 1px solid black;
-}
-</style>
-</head>
-<body>
-
-<h1>Responsive Web Design Demo</h1>
-
-<div class="city">
-  <h2>London</h2>
-  <p>London is the capital city of England.</p>
-  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-</div>
-
-<div class="city">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p>
-  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-</div>
-
-<div class="city">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  <p>It is the center of the Greater Tokyo Area,  and the most populous metropolitan area in the world.</p>
-</div>
-
-<div class="city">
-  <h2>New York</h2>
-  <p>The City of New York is the most populous city in the United States.</p>
-  <p>New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p>
-</div>
-
-</body>
-</html>
-
-
-                  </pre>
-
-                  </div>
-                  <div class="mdl-grid" id="tags">
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" >
-                                          
-                      <button type="button" class="mdl-chip">
-                          <span class="mdl-chip__text">Java</span>
-                      </button>
-
-                      <button type="button" class="mdl-chip">
-                          <span class="mdl-chip__text">Mysql</span>
-                      </button>
-
-                      <button type="button" class="mdl-chip">
-                          <span class="mdl-chip__text">tag 3</span>
-                      </button>
-          
-                    </div>
-                  </div>
-                  </div>
-
+                <h4>Quick how-to</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
               </div>
-
-               
-
-
-
-                  
-
-                  <hr>
-                  <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                  
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">an hour ago</p></p>
-                      <hr>
-                     
-          
-                    </div>
-                  
-                  
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                          
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">33 mins ago</p></p>
-                     <hr>
-          
-                    </div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                          
-                      <a href="" class="addcomment">Add a comment</a><br>
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows="8" column="10" maxrows="15"
-                          id="comment-box"></textarea>
-                        
-                      </div><br>
-                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        Comment
-                      </button>
-                    </div>
-                    
-                  </div>
-                          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-
-                                 
-
-                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-                              <li class="mdl-menu__item">Lorem</li>
-                              <li class="mdl-menu__item" disabled>Ipsum</li>
-                              <li class="mdl-menu__item">Dolor</li>
-                            </ul>
-
-                          </section>
-
-              <div class="mdl-grid">
-                  
-                  <div class="mdl-cell mdl-cell--11-col">
-                    <h5>Number of Answers</h5>
-
- <hr>  
-                     <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" id="arrows-wrapper">
-                     <div class="mdl-cell mdl-cell--1-col">                  
-                     <i class="material-icons" id="arrows">arrow_drop_up</i><br>
-                     <p class="like-counter">80</p><br>
-                     <i class="material-icons" id="arrows">arrow_drop_down</i></div>
-
-                  
-                     </div>
-
-                (Answer content)Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. 
-                <div id="scroll">
-                  <pre>
-/**
- * A class to provide a simple list.
- * List resizes automatically. Used to illustrate 
- * various design and implementation details of 
- * a class in Java.
- * 
- * @author scottm
- *
- */
-public class GenericList{
-    // class constant for default size
-    private static final int DEFAULT_CAP = 10;
-    
-    //instance variables
-    // iValues store the elements of the list and 
-    // may have extra capacity
-    private Object[] iValues;
-    private int iSize;
-    
-    /**
-     * Default add method. Add x to the end of this IntList.
-     * Size of the list goes up by 1.
-     * @param x The value to add to the end of this list.
-     */
-    public void add(Object x){
-        insert(iSize, x);
-    }
-    
-    public Object get(int pos){
-        return iValues[pos];
-    }
-    
-    /**
-     * Insert obj at position pos.
-     * post: get(pos) = x, size() = old size() + 1
-     * @param pos 0 <= pos <= size()
-     * @param obj The element to add.
-     */
-    public void insert(int pos, Object obj){
-        ensureCapcity();
-        for(int i = iSize; i > pos; i--){
-            iValues[i] = iValues[i - 1];
-        }
-        iValues[pos] = obj;
-        iSize++;
-    }
-    
-    public Object remove(int pos){
-        Object removedValue = iValues[pos];
-        for(int i = pos; i < iSize - 1; i++)
-            iValues[i] = iValues[i + 1];
-        iValues[iSize - 1] = null;
-        iSize--;
-        return removedValue;
-    }
-    
-    private void ensureCapcity(){
-        // is there extra capacity available?
-        // if not, resize
-        if(iSize == iValues.length)
-            resize();
-    }
-    
-    public int size(){
-        return iSize;
-    }
-    
-    // resize internal storage container by a factor of 2
-    private void resize() {
-        Object[] temp = new Object[iValues.length * 2];
-        System.arraycopy(iValues, 0, temp, 0, iValues.length);
-        iValues = temp;
-    }
-    
-    /**
-     * Return a String version of this list. Size and 
-     * elements included.
-     */
-    public String toString(){
-        // we could make this more effecient by using a StringBuffer.
-        // See alternative version
-        String result = "size: " + iSize + ", elements: [";
-        for(int i = 0; i < iSize - 1; i++)
-            result += iValues[i].toString() + ", ";
-        if(iSize > 0 )
-            result += iValues[iSize - 1];
-        result += "]";
-        return result;
-    }
-    
-    // Would not really have this and toString available
-    // both included just for testing
-    public String toStringUsingStringBuffer(){
-        StringBuffer result = new StringBuffer();
-        result.append( "size: " );
-        result.append( iSize );
-        result.append(", elements: [");
-        for(int i = 0; i < iSize - 1; i++){
-            result.append(iValues[i]);
-            result.append(", ");
-        }
-        if( iSize > 0 )
-            result.append(iValues[iSize - 1]);
-        result.append("]");
-        return result.toString();
-    }
-
-    /**
-     * Default constructor. Creates an empty list.
-     */
-    public GenericList(){
-        //redirect to single int constructor
-        this(DEFAULT_CAP);
-        //other statments could go here.
-    }
-
-    /**
-     * Constructor to allow user of class to specify 
-     * initial capacity in case they intend to add a lot
-     * of elements to new list. Creates an empty list.
-     * @param initialCap > 0
-     */    
-    public GenericList(int initialCap) {
-        assert initialCap > 0 : "Violation of precondition. IntListVer1(int initialCap):"
-            + "initialCap must be greater than 0. Value of initialCap: " + initialCap;
-        iValues = new Object[initialCap];
-        iSize = 0;
-    }
-    
-   /**
-    * Return true if this IntList is equal to other.
-    * pre: none
-    * @param other The object to comapre to this
-    * @return true if other is a non null, IntList object
-    * that is the same size as this IntList and has the
-    * same elements in the same order, false otherwise.
-    */
-    public boolean equals(Object other){
-        boolean result;
-        if(other == null)
-            // we know this is not null so can't be equal
-            result = false;
-        else if(this == other)
-            // quick check if this and other refer to same IntList object
-            result = true;
-        else if( this.getClass() != other.getClass() )
-            // other is not an IntList they can't be equal
-            result = false;
-        else{
-            // other is not null and refers to an IntList
-            GenericList otherList = (GenericList)other;
-            result = this.size() == otherList.size();
-            int i = 0;
-            while(i < iSize && result){
-                result = this.iValues[i].equals( otherList.iValues[i] );
-                i++;
-            }
-        }
-        return result;     
-    }
-
-}
-
-
-                  </pre>
-
-                  </div>
-                  </div>
-
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
               </div>
-
-               
-
-
-
-                  
-
-                  <hr>
-                  <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                  
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">an hour ago</p></p>
-                      <hr>
-                     
-          
-                    </div>
-                  
-                  
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                          
-                        <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. <a href="" class="name">- Justine Mojal</a>  <p class="datetimestamp">33 mins ago</p></p>
-                     <hr>
-          
-                    </div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-
-                    <div class="mdl-cell mdl-cell--10-col" id="comment">
-                                          
-                      <a href="" class="addcomment">Add a comment</a><br>
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows="8" column="10" maxrows="15"
-                          id="comment-box"></textarea>
-                        
-                      </div><br>
-                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        Comment
-                      </button>
-                    </div>
-                    
-                  </div>
-
-
-
-
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Forum(category)</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div> 
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Question title</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="detail.html">See more...</a><p>10:09pm</p>
+                </div>                              
               </div>
-
-
-             
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">See all of the questions</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Random article of the day</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Share</li>
-              <li class="mdl-menu__item" disabled>Report</li>
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
               <li class="mdl-menu__item">Dolor</li>
             </ul>
           </section>
-
-
-
-
-
           <section class="section--footer mdl-color--white mdl-grid">
             <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
               <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
@@ -1513,7 +1023,5 @@ public class GenericList{
         </footer>
       </main>
     </div>
-    <!--<a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>-->
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </body>
-</html>
