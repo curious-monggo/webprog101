@@ -12,25 +12,25 @@ else if(isset($_SESSION['u_id'])){
 
 		include_once 'dbh.inc.php';
 	
-		$comment = mysqli_real_escape_string($conn, $_POST['commentEnter']);
-		$postcommentidGet = mysqli_real_escape_string($conn, $_GET['id']);		
+		$answer = mysqli_real_escape_string($conn, $_POST['answerEnter']);
+		$postansweridGet = mysqli_real_escape_string($conn, $_GET['id']);		
 
 		//Error handlers
 		//Check for empty fields
-		if (empty($comment)) {
-			header("Location: ../detail.php?id=".$_GET['id']."&commentfields=empty");
+		if (empty($answer)) {
+			header("Location: ../main.php?answerfields=empty");
 			exit();
 		} 
 			//Check if input characters are valid
 				//Check if email is valid
 			else {
-				$sql = "SELECT * FROM comments WHERE comment_content='$comment'";
+				$sql = "SELECT * FROM answers WHERE answer_content='$answer'";
 				$result = mysqli_query($conn, $sql);
 				$resultCheck = mysqli_num_rows($result);
 
 					if ($resultCheck > 0) {
 						//header("Location: ../main.php?duplicatecomment");
-						header("Location: ../detail.php?id=".$_GET['id']."&comment=duplicate");
+						header("Location: ../detail.php?id=".$_GET['id']."&answer=duplicate");
 						exit();
 					} 
 
@@ -39,7 +39,7 @@ else if(isset($_SESSION['u_id'])){
 						//$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 						//Insert the user into the database
 						$username=$_SESSION['u_uid'];
-						$sql = "INSERT INTO comments (comment_content, postcomment_id, comment_username) VALUES ('$comment', '$postcommentidGet','$username')";
+						$sql = "INSERT INTO answers (answer_content, postanswer_id, answer_username) VALUES ('$answer', '$postansweridGet','$username')";
 
 						//$idpost = $_GET['id'];
 						mysqli_query($conn, $sql);

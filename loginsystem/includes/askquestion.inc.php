@@ -41,7 +41,8 @@ else if(isset($_SESSION['u_id'])){
 						//inserting question to database
 						//$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 						//Insert the user into the database
-						$sql = "INSERT INTO posts (posts_title, posts_content, posts_category) VALUES ('$questionTitle', '$question','$category');";
+						$username=$_SESSION['u_uid'];
+						$sql = "INSERT INTO posts (posts_title, posts_content, posts_category, posts_username) VALUES ('$questionTitle', '$question','$category','$username');";
 						mysqli_query($conn, $sql);
 						header("Location: ../main.php?askedquestionpost=success");
 						exit();

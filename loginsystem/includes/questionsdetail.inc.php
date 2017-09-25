@@ -1,5 +1,7 @@
 <?php
 include 'dbh.inc.php';
+
+//$idcomment = mysqli_real_escape_string($conn, $_GET['id']);
 $sql = "SELECT * FROM posts WHERE posts_id=".$_GET['id'];
 $result = mysqli_query($conn, $sql);
 $resultCheck = mysqli_num_rows($result);
@@ -21,6 +23,9 @@ if ($resultCheck > 0) {
                <h4>'.$row['posts_title'].'</h4>
                <hr>
 
-               <p>'.$row['posts_content'].'</p>';
+               <p>'.$row['posts_content'].'</p>
+               <h6>Asked by: @'.$row['posts_username'].'</h6>';
+
     }
+
 }

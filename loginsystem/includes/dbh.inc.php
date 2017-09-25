@@ -1,7 +1,7 @@
 <?php
 
 $dbServername = "localhost";
-$dbUsername = "root";
+$dbUsername = "ilance.mojal";
 $dbPassword = "IlanceFTW";
 $dbName = "loginsystem";
 
