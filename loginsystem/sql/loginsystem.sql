@@ -1,22 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
--- https://www.phpmyadmin.net/
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2017 at 03:53 PM
--- Server version: 5.7.19-log
--- PHP Version: 7.1.7
+-- Generation Time: Sep 25, 2017 at 11:09 AM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `loginsystem`
@@ -25,48 +23,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `answers`
+--
+
+CREATE TABLE IF NOT EXISTS `answers` (
+  `answer_id` int(11) NOT NULL,
+  `answer_content` varchar(255) NOT NULL,
+  `postanswer_id` int(11) NOT NULL,
+  `answer_username` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `answers`
+--
+
+INSERT INTO `answers` (`answer_id`, `answer_content`, `postanswer_id`, `answer_username`) VALUES
+(0, 'test', 69, 'Admin'),
+(0, 'oh yeahhhh', 68, 'Admin');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `comments`
 --
 
-CREATE TABLE `comments` (
-  `comments_id` int(11) NOT NULL,
-  `comment_content` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `comments`
---
-
-INSERT INTO `comments` (`comments_id`, `comment_content`) VALUES
-(15, 'uiu'),
-(16, 'uiuiui'),
-(17, 'iuiuiu'),
-(18, 'nhnjg'),
-(19, 'jhj'),
-(20, 'jhjhjhj'),
-(21, 'test'),
-(22, 'wewe'),
-(23, 'ewewe'),
-(24, 'rererer'),
-(25, 'fefefefef'),
-(26, 'dfd'),
-(27, 'dfddd'),
-(28, 'we'),
-(29, 'rtrt'),
-(30, 'uyu'),
-(31, 'ere'),
-(32, 'yu'),
-(33, 'uyuyu'),
-(34, 'ty'),
-(35, 'df'),
-(36, 'rt'),
-(37, 'rer'),
-(38, '12'),
-(39, 'oio'),
-(40, 'fgfgfg'),
-(41, 'erfd'),
-(42, 'yu7'),
-(43, 'lmaoo\r\n');
+CREATE TABLE IF NOT EXISTS `comments` (
+`comments_id` int(11) NOT NULL,
+  `comment_content` varchar(255) NOT NULL,
+  `postcomment_id` int(11) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
 
 -- --------------------------------------------------------
 
@@ -74,21 +59,21 @@ INSERT INTO `comments` (`comments_id`, `comment_content`) VALUES
 -- Table structure for table `posts`
 --
 
-CREATE TABLE `posts` (
-  `posts_id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `posts` (
+`posts_id` int(11) NOT NULL,
   `posts_title` varchar(256) NOT NULL,
   `posts_content` varchar(256) NOT NULL,
-  `posts_category` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `posts_category` varchar(256) NOT NULL,
+  `posts_username` varchar(255) NOT NULL,
+  `postcomment_id` int(11) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`posts_id`, `posts_title`, `posts_content`, `posts_category`) VALUES
-(65, 'titile', 'question', 'Java'),
-(66, 'titlee', 'questionnnn', 'C#'),
-(67, 'Test 123', 'Test 123', 'Java');
+INSERT INTO `posts` (`posts_id`, `posts_title`, `posts_content`, `posts_category`, `posts_username`, `postcomment_id`) VALUES
+(68, 'Test question', 'test content', 'Java', 'Admin', 0);
 
 -- --------------------------------------------------------
 
@@ -96,14 +81,14 @@ INSERT INTO `posts` (`posts_id`, `posts_title`, `posts_content`, `posts_category
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `users` (
+`user_id` int(11) NOT NULL,
   `user_first` varchar(256) NOT NULL,
   `user_last` varchar(256) NOT NULL,
   `user_email` varchar(256) NOT NULL,
   `user_uid` varchar(256) NOT NULL,
   `user_pwd` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `users`
@@ -122,19 +107,19 @@ INSERT INTO `users` (`user_id`, `user_first`, `user_last`, `user_email`, `user_u
 -- Indexes for table `comments`
 --
 ALTER TABLE `comments`
-  ADD PRIMARY KEY (`comments_id`);
+ ADD PRIMARY KEY (`comments_id`);
 
 --
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
-  ADD PRIMARY KEY (`posts_id`);
+ ADD PRIMARY KEY (`posts_id`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`);
+ ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -144,18 +129,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comments_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+MODIFY `comments_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `posts_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+MODIFY `posts_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;COMMIT;
-
+MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
