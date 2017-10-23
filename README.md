@@ -1,81 +1,66 @@
-# webprog101
-STI BSIT students project for WEBPROG. Online Platforms for WHAT?
+# Material Design Lite
 
-
-Yung system files ay yung (loginsystem na folder)
-
-
-
-# What to do?
-
-1. Download the project(ung green na may description na clone or download)
-
-2. Choose .zip to download
-
-3. Extract
-
-4. Open your group's file.
-
-5. Edit the index.html
-
-6. Style the templates(customize colors)
-
-7. upload the files after editing on https://github.com
+[![GitHub version](https://badge.fury.io/gh/google%2Fmaterial-design-lite.svg)](https://badge.fury.io/gh/google%2Fmaterial-design-lite)
+[![npm version](https://badge.fury.io/js/material-design-lite.svg)](https://badge.fury.io/js/material-design-lite)
+[![Bower version](https://badge.fury.io/bo/material-design-lite.svg)](https://badge.fury.io/bo/material-design-lite)
+[![Gitter version](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/google/material-design-lite)
+[![Dependency Status](https://david-dm.org/google/material-design-lite.svg)](https://david-dm.org/google/material-design-lite)
 
 
 
+Material Design Lite (MDL) lets you add a Material Design look and feel to your
+static content websites. It doesn't rely on any JavaScript frameworks or
+libraries. Optimized for cross-device use, gracefully degrades in older
+browsers, and offers an experience that is accessible from the get-go.
+
+> ### Limited support
 
 
 
+> No further development is taking place in MDL by the core team, but we are happy to review PRs, fix critical bugs and
+> push out new releases. No breaking changes will be accepted.
 
-----------------------------------------------------------------------------------------------------------------------------------------
-****************************************************************************************************************************************
-----------------------------------------------------------------------------------------------------------------------------------------
+## Use MDL on your site?
 
-
-
-If you want to try out the system...
-
-
-How to setup project with xampp
-
-1. Delete everything in C:\xampp\htdocs
-
-2. Paste the project loginsystem in C:\xampp\htdocs
-
-3. Run xampp control panel.
-
-4. Click start on apache.
-
-5. Click admin to see the file.
-
-6. click Index of /loginsystem/
+**This document is targeted at developers that will contribute to or compile
+MDL. If you are looking to use MDL on your website or web app please head to
+[getmdl.io](http://getmdl.io).**
 
 
 
-How to setup phpMyAdmin(and also import database)
+| IE9 | IE10 | IE11 | Chrome | Opera | Firefox | Safari | Chrome (Android) | Mobile Safari |
+|-----|------|------|--------|-------|---------|--------|------------------|---------------|
+| B   | A    | A    | A      | A     | A       | A      | A                | A             |
 
-1. Run xampp control panel(if you haven't done it yet).
-
-2. Click start on mysql.
-
-3. Type http://localhost/phpmyadmin/ in admin(or just click on the url).
-
-4. Type "root" for username and empty for password(no password).
-
-5. Click import.
-
-6. Click choose file.
-
-7. Upload file from \xampp\htdocs\loginsystem\sql\loginsystem.sql
-
-8. Go back to http://localhost/loginsystem/ and sign up.
-
-9. Login.
+A-grade browsers are fully supported. B-grade browsers will gracefully degrade
+to our CSS-only experience.
 
 
 
-# Watch youtube for tutorials.
-Learn how to make a simple login system(Dito binase ung backend)
-https://www.youtube.com/watch?v=xb8aad4MRx8
-(1 hour yan)
+Clone the repo using Git:
+
+
+
+Alternatively you can [download](https://github.com/google/material-design-lite/archive/master.zip)
+this repository.
+
+
+
+```bash
+git config core.eol lf
+git config core.autocrlf input
+git rm --cached -r .
+git reset --hard
+```
+
+> Remember, the master branch is considered unstable. Do not use this in
+production. Use a tagged state of the repository, npm, or bower for stability!
+
+
+
+MDL is currently in limited support mode, with no further development taking place by the core team.
+We are happy to accept and review pull requests for new functionality, however, as long as there are no breaking
+changes.
+
+## License
+

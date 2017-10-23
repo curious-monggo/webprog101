@@ -1,0 +1,278 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>W</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./dist/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary" style="background:url(images/sqlbg.jpg); background-size:cover;">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3 class="header-title">SQL | WHAT</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background:rgba(0,0,0,0.8);">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#features" class="mdl-layout__tab">Installation</a>
+          <a href="#functions" class="mdl-layout__tab">Basic Functions</a>
+          <a href="#aggregations" class="mdl-layout__tab">Basic Aggregations</a>
+          <a href="#faq" class="mdl-layout__tab">FAQ</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">What is SQL</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>SQL is a standard language for accessing and manipulating databases.</h5>
+                  Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language, data manipulation language, and data control language.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control.</h5>
+                  Although SQL is often described as, and to a great extent is, a declarative language (4GL), it also includes procedural elements. <br />
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5> Edgar F. Codd's relational model</h5>
+                  SQL was one of the first commercial languages for Edgar F. Codd's relational model, as described in his influential 1970  paper, "A Relational Model of Data for Large Shared Data Banks".[10] Despite not entirely adhering to the relational model as described by Codd, it became the most widely used database language.
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Put into Action</h4>
+                QL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987. Since then, the standard has been revised to include a larger set of features. Despite the existence of such standards, most SQL code is not completely portable among different database systems without adjustments.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="https://en.wikipedia.org/wiki/SQL" class="mdl-button">More on Wikipedia</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="features">
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Installation</h4>
+              <p>Watch this tutorials on how to install the SQL Server</p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4WEFTQ3VJNg" frameborder="0" allowfullscreen></iframe>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="functions">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Learn about creating database tables using CREATE statement</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/oReH2vO8Izc" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Learn about retrieving data using SELECT statement</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SoxHivg9Ldw" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Learn about modifying data using UPDATE statement</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lyqeLvtlQiA" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Learn about deleting data using DELETE statement</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/6tpXe_GfJi0" frameborder="0" allowfullscreen></iframe>
+          </section>
+        </div>
+
+        <div class="mdl-layout__tab-panel" id="aggregations">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>GROUP BY</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3QXn_O9RQiI" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>SUM()</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7BYVyy5nN80" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>COUNT()</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/wpGmeKlSJFo" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>HAVING()</h4>
+            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aUXeHRpJNhs" frameborder="0" allowfullscreen></iframe>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="faq">
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>What are some of the advantages of using a SQL Server database over other types of databases?</h4>
+              <p>SQL Server offers many advantages over other types of databases. Some of those advantages include the following:</p>
+              <ul>
+                <li>Security: SQL Server provides two security models including integration with Windows Authentication to provide robust security platform for managing your organizations information. Security can be managed across all database objects including tables, views, stored procedures and at a very granular level, to provide complete information security. Database encryption is now available as well to secure SQL Server database at rest.</li>
+                <li>Scalability: SQL Server is a highly scalable enterprise database platform capabable of managing petabytes of data while delivery high performance. This allows organizations to deploy SQL Server databases with the confidence that SQL Server can continue to deliver superior performance even as their needs and businesses grow.</li>
+                <li>High Availability/Failover: SQL Server provides a variety of high availablity features including fail over clustering availale on the Standard and Enterprise editions, database mirroring, log shipping, and database snapshots to meet your organizations' needs.</li>
+                <li>Business Intelligence: SQL Server Standard and Enterprise Editions come with extensive business intelligence capabilities through SQL Server Analysis Services. Analytical models can be developed to breakdown business information to provide business insights for managing and forecasting business needs. SQL Server also comes with integrated reporting capabilities from SQL Server Reporting Services which allows organizations to access business critical information across the organization. In more recent versions of SQL Server, PowerPivot for Microsoft Excel has been added to allow users another familiar tool for analyzing business data.</li>
+                <li>Integration: SQL Server provides a robust set of integration tools call SQL Server Integration Services (SSIS) which can be used considate data from multiple heterogenous data sources for holistic data view and comprehensive data analysis. SSIS can also be used to migrate data from other database formats (Oracle, DBase, Paradox, legacy formats, Microsoft Access) to SQL Server.</li>
+              </ul>
+              <h4>What types of database applications can be built with SQL Server?</h4>
+              <p>Windows applications using the Microsoft .NET Framework, Visual Basic (VB) 6.0 applications, Visual Basic for Applications (VBA) applications including Microsoft Access and Microsoft Excel, web applications (ASP.NET), and web services (.NET web services). SQL Server is also the database backend for many existing software applications including SharePoint Server, Microsoft Dynamics CRM, Microsoft Project Server, etc., and these applications can integrated with other SQL Server applications. Existing SQL Server applications can also be enhanced to add new functionality, and migrated to newer versions of SQL Server to take advantages of new features.</p>
+              <h4>What is Microsoft SQL Azure and what are some of its features and capabilities?</h4>
+              <p>Microsoft SQL Azure is a cloud-based database service based on the SQL Server database platform. The SQL Azure platform is continuing to evolve with cloud-based database services currently being offered. In the future, SQL Azure will include other cloud-based SQL Server services such as SQL Azure Reporting, based on SQL Server Reporting Services, and SQL Azure Data Sync based on the Sync Framework.
+                <br /><br />
+              Cloud-based SQL Server services offer a number of attractive features including high availability and scalability. These features are built into the SQL Azure service offering and require no additional administration. In addition, the SQL Azure database service can provide a solution for remote access to organizational data across locations, to remote workers, and to mobile devices.
+                <br />
+              SQL Azure supports common database access technologies such as ADO.NET and native ODBC. SQL Azure databases can be managed through a light-weight web client or through SQL Server Management Studio. Visual Studio 2010 also offers integration with SQL Azure databases.
+              <br /><br />
+              Like many cloud-based services, whether SQL Azure is the right database management solution depends on the specific project requirements. Please contact us for a detailed assessment.</p>
+              <h4>What are my hosting options for SQL Server?</h4>
+              <p>When using SQL Server you have several options for hosting the SQL Server database. One you can host the SQL Server database yourself if you have the requisite hardware and desire to host your own SQL Server database. For many small and medium size businesses, however, SQL Server hosting can present a challenge. Fortunately, with the increased Internet bandwidth available today, many businesses are turning to outsourcing their SQL Server hosting to companies like Lemington or using SQL Azure.
+                <br /><br />
+              SQL Azure is a robust platform for SQL Server hosting, although there are a number of limitations placed on what you can do with a SQL Azure hosted database. SQL Server hosting companies like Lemington can be more flexibile in their hosting environments and offer more options and fewer limitations on hosting a SQL Server database. Which option is better depends on the specific hosting situation.
+              <br /><br />
+              Outsourcing SQL Server hosting is economical because the server, maintenance and SQL Server licensing costs can be spread across many hosting customers, thus reducing the hosting cost for any individual hosting customer. If you are interested in exploring the outsourcing of your SQL Server database please contact us for more information.</p>
+              <br /><br />
+              <h4>Does SQL Server have its own reporting engine, and if so, what are its features?</h4>
+              <p>Yes, SQL Server has its own reporting engine beginning with SQL Server 2005. SQL Server Reporting Services (SSRS) is a web-based, enterprise class reporting engine supporting many advanced reporting features. SSRS can be deployed in two different scenarios: the standard SSRS deployment and a SharePoint integrated deployment which allows users to view SSRS reports inside an existing SharePoint web site.
+                <br /><br />
+              Paramaterized reports, report subscriptions, support for non-SQL Server data sources, custom security and role-based security, and report drill down are just a few of the features of SSRS. In addition, reports can be exported in a variety of formats including Microsoft Word, Microsoft Excel, PDF, and text files (comma separated values (csv), etc. Based SSRS reporting features can be found the Express edition of SQL Server, with the Standard, Business Intelligence and Enterprise editions providing many of the more advanced SSRS features.
+              <br /><br />
+              SSRS has the ability to import report designs from other reporting engines such as Microsoft Access. This import capabiility can help smooth the transition from Microsoft Access to a SQL Server based solution by allowing you to upgrade your Microsoft Access reports seemlessly without having to create the underlying reports.</p>
+            </div>
+
+          </section>
+        </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Navigate</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVA</a></li>
+                <li><a href="#">SQL</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Here</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Installation</a></li>
+                <li><a href="#">Basic Function</a></li>
+                <li><a href="#">Basic Aggregation </a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">FAQ</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Answers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              More Information
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="./material.min.js"></script>
+  </body>
+</html>
